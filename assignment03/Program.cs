@@ -112,9 +112,72 @@ namespace assignment03
                 Console.WriteLine();
             }
             #endregion
+            #region q13
+            //13- Write a program in C# Sharp to find the sum of all elements of the array.
+            int[] arr = { 1, 2, 3, 4, 5 };
+            int sum = 0;
+            foreach (int num in arr)
+            {
+                sum += num;
+            }
+            Console.WriteLine("Sum of array elements: " + sum);
+            #endregion
+            #region q14
+            //14- Write a program in C# Sharp to count the frequency of each element of an array.
+          
 
+       
+          
+                int[] arr = { 1, 3, 2, 1, 4, 3, 2, 1 };
+                int[] freq = new int[arr.Length];
+                int visited = -1;
+
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    int count = 1;
+                    for (int j = i + 1; j < arr.Length; j++)
+                    {
+                        if (arr[i] == arr[j])
+                        {
+                            count++;
+                            freq[j] = visited;
+                        }
+                    }
+
+                    if (freq[i] != visited)
+                        freq[i] = count;
+                }
+
+                Console.WriteLine("Element | Frequency");
+                for (int i = 0; i < freq.Length; i++)
+                {
+                    if (freq[i] != visited)
+                        Console.WriteLine($"   {arr[i]}    |    {freq[i]}");
+                }
+            //it's not working 
+            #endregion
+
+
+            #region q15
+            // Write a program in C# Sharp to find maximum and minimum element in an array
+
+            int[] nums = { 4, 2, 7, 1, 9 };
+            int max = nums.Max();
+            int min = nums.Min();
+            Console.WriteLine("Max = " + max);
+            Console.WriteLine("Min = " + min);
+
+            #endregion
+
+            #region q16
+            //16- Write a program in C# Sharp to find the second largest element in an array.
+            int[] numbers = { 5, 3, 8, 1, 4 };
+            Array.Sort(numbers);
+            int secondLargest = numbers[numbers.Length - 2];
+            Console.WriteLine("Second largest element: " + secondLargest);
+            #endregion
 
 
         }
-    }
+}
 }
