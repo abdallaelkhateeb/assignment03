@@ -50,6 +50,15 @@ namespace assignment03
 
 
             #endregion
+
+            #region q6
+            //6- Write a program that allows the user to insert an integer then print all numbers between 1 to that number.
+
+            int limit = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= limit; i++)
+                Console.Write(i + " ");
+
+            #endregion
         }
     }
 }
