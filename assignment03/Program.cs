@@ -83,6 +83,28 @@ namespace assignment03
             int result = (int)Math.Pow(basen, power);
             Console.WriteLine(result);
             #endregion
+            #region q10
+            //10- Write a program to enter marks of five subjects and calculate total, average and percentage.
+
+            int total = 0;
+            for (int i = 0; i < 5; i++)
+                total += int.Parse(Console.ReadLine());
+
+            double average = total / 5.0;
+            Console.WriteLine("Total marks = " + total);
+            Console.WriteLine("Average Marks = " + average);
+            Console.WriteLine("Percentage = " + average*100 +"%");
+            #endregion
+            #region q11
+            //11- Write a program to input the month number and print the number of days in that month.
+
+            int month = int.Parse(Console.ReadLine());
+            int days = DateTime.DaysInMonth(2024, month);
+            Console.WriteLine("Days in Month: " + days);
+            #endregion
+
+
+
         }
     }
 }
