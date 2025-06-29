@@ -59,6 +59,21 @@ namespace assignment03
                 Console.Write(i + " ");
 
             #endregion
+            #region q7
+            // 7 - Write a program that allows the user to insert an integer then  print a multiplication table up to 12.
+            int m = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= 12; i++)
+                Console.Write((m * i) + " ");
+            #endregion
+            #region q8
+            //8- Write a program that allows to user to insert number then print all even numbers between 1 to this number
+            int x = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= x; i++)
+            {
+                if (i % 2 == 0)
+                    Console.Write(i + " ");
+            }
+            #endregion
         }
     }
 }
