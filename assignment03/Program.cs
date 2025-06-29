@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Security.Cryptography;
 
 namespace assignment03
 {
@@ -38,6 +39,15 @@ namespace assignment03
             //4- Write a program that allows the user to insert an integer number then check If a number is even or odd.
             int n = int.Parse(Console.ReadLine());
             Console.WriteLine(n % 2 == 0 ? "Even" : "Odd");
+            #endregion
+
+
+            #region q5
+            //5- Write a program that takes character from the user then if it is a vowel chars (a,e,I,o,u) then print (vowel) otherwise print (consonant).
+            char ch = char.ToLower(Console.ReadKey().KeyChar);
+            Console.WriteLine((ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') ? "\nvowel" : "\nconsonant");
+
+
 
             #endregion
         }
