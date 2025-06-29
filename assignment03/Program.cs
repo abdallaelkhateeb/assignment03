@@ -102,6 +102,16 @@ namespace assignment03
             int days = DateTime.DaysInMonth(2024, month);
             Console.WriteLine("Days in Month: " + days);
             #endregion
+            #region q12
+            // Write a program that prints an identity matrix using for loop, in other words takes a value n from the user and shows the identity table of size n * n.
+            int size = int.Parse(Console.ReadLine());
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                    Console.Write(i == j ? "1 " : "0 ");
+                Console.WriteLine();
+            }
+            #endregion
 
 
 
