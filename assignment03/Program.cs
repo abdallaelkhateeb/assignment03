@@ -74,6 +74,15 @@ namespace assignment03
                     Console.Write(i + " ");
             }
             #endregion
+            #region q9
+            //9- Write a program that takes two integers then prints the power.
+            Console.WriteLine("Enter base number:");
+            int basen = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter ppwer number:");
+            int power = int.Parse(Console.ReadLine());
+            int result = (int)Math.Pow(basen, power);
+            Console.WriteLine(result);
+            #endregion
         }
     }
 }
