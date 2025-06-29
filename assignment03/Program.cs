@@ -32,11 +32,13 @@ namespace assignment03
 
             Console.WriteLine("max element = " + max);
             Console.WriteLine("min element = " + min);
-
-
             #endregion
+
             #region q4
-            
+            //4- Write a program that allows the user to insert an integer number then check If a number is even or odd.
+            int n = int.Parse(Console.ReadLine());
+            Console.WriteLine(n % 2 == 0 ? "Even" : "Odd");
+
             #endregion
         }
     }
